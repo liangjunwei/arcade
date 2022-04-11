@@ -1,0 +1,56 @@
+<!-----------------------------------------------------------
+Author: Junwei Liang
+Date: 04/10/2022
+Project: Snake Game
+------------------------------------------------------------>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Tamil&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Snake</title>
+</head>
+<body>
+    <h1>Snake Game</h1>
+    
+    <ul>
+        <li>Use arrow keys or W A S D keys to control the snake</li>
+        <li>Eat more apples to make your snake longer</li>
+        <li>Game over when snake hits its own body or wall</li>
+        <li>Player wins the game when there is no more apple to eat</li>
+    </ul>
+
+    <section id="scoreboard">
+        <h3 id="best">Best Record: 0</h3>
+        <h3 id="average">Average Score: 0</h3>
+        <h3 id="score">Score: 0</h3>
+    </section>
+
+    <form>
+        <select id="level">
+            <option value="250">Easy</option>
+            <option value="200">Medium</option>
+            <option value="150">Hard</option>
+        </select>
+        <button id="start" type="submit">Start</button>
+    </form>
+
+    <table></table>
+
+    <section id="result" class="hidden">
+        <h3 id="message"></h3>
+        <button id="reset">Play Again</button>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
